@@ -7,19 +7,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class LoginAs extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login_as);
     }
 
-    public void openActivity(View view) {
-        Toast.makeText(this, "Login Page", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(MainActivity.this, LoginAs.class);
+    public void Sign(View view) {
+        Toast.makeText(this, "This is SignUp Page", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(LoginAs.this,SignUpPage.class);
         startActivity(intent);
     }
 }
