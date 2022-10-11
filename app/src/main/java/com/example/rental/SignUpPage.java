@@ -47,6 +47,8 @@ public class SignUpPage extends AppCompatActivity {
         btnVerifyOtp = findViewById(R.id.btnVerifyOtp);
         mAuth = FirebaseAuth.getInstance();
 
+
+
         btnGenOtp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

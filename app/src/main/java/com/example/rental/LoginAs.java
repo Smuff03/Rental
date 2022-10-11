@@ -20,4 +20,5 @@ public class LoginAs extends AppCompatActivity {
         Intent intent = new Intent(LoginAs.this,SignUpPage.class);
         startActivity(intent);
     }
-}
+
+  }

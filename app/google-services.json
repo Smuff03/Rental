@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "807582420158",
+    "firebase_url": "https://rental-c91bb-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "rental-c91bb",
     "storage_bucket": "rental-c91bb.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "807582420158-dm6c83fcj87u4ql9bnng5cbf8ftm89oq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rental",
+            "certificate_hash": "b6f2b6a2cfe5150de83d042114551b4249bec8ce"
+          }
+        },
         {
           "client_id": "807582420158-thbib2er2co3cs1s2nmhonvcm2ubev70.apps.googleusercontent.com",
           "client_type": 1,
