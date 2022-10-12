@@ -14,20 +14,23 @@
         android:theme="@style/Theme.Rental"
         tools:targetApi="31">
         <activity
+            android:name=".SearchBarPage"
+            android:exported="false" />
+        <activity
             android:name=".SetPassword"
             android:exported="false"
             android:label=" Create Username "
-            android:parentActivityName=".SignUpPage"/>
+            android:parentActivityName=".SignUpPage" />
         <activity
             android:name=".SignUpPage"
             android:exported="false"
             android:label="Sign Up"
-            android:parentActivityName=".LoginAs"/>
+            android:parentActivityName=".LoginAs" />
         <activity
             android:name=".LoginAs"
             android:exported="false"
             android:label="Choose Login"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

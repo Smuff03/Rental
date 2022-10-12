@@ -12,7 +12,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class SetPassword extends AppCompatActivity {
-    EditText hintUserId,hintPassword;
+    EditText hintUserId,hintPassword,hintMobileNo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,17 +25,28 @@ public class SetPassword extends AppCompatActivity {
         hintPassword=(EditText) findViewById(R.id.hintPassword);
 
 
+
+
         String userId = hintUserId.getText().toString().trim();
         String password = hintPassword.getText().toString().trim();
 
-        Dataholder obj = new Dataholder("","",userId,password);
+
+
+        Dataholder obj = new Dataholder("","","",password);
         FirebaseDatabase db = FirebaseDatabase.getInstance();
 
-        DatabaseReference node= db.getReference("Customer");
+        DatabaseReference node= db.getReference("Customerr");
         node.child(userId).setValue(obj);
 
         hintPassword.getText();
         Toast.makeText(this, "Value inserted", Toast.LENGTH_SHORT).show();
+        node.child(userId).setValue(obj);
+        hintMobileNo.getText();
+        hintPassword.getText();
+        Toast.makeText(this, "Value inserted", Toast.LENGTH_SHORT).show();
+
+
+
 
 
 

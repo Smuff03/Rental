@@ -1,46 +1,45 @@
 package com.example.rental;
 
-public class Dataholder {
-
-    String name,email,userId,password;
-
-    public Dataholder(String Name, String Email, String UserId, String Password) {
-        name =  Name;
-        email = Email;
-        userId = UserId;
-        password = Password;
-    }
+public class Dataholder { String Name,Email,MobileNO,Password;
 
     public String getName() {
-        return name;
+        return Name;
     }
 
-    public void setName(String Name) {
-        name = Name;
+    public void setName(String name) {
+        Name = name;
     }
 
     public String getEmail() {
-        return email;
+        return Email;
     }
 
-    public void setEmail(String Email) {
-       email = Email;
+    public void setEmail(String email) {
+        Email = email;
     }
 
-    public String getUserId() {
-        return userId;
+    public String getMobileNO() {
+        return MobileNO;
     }
 
-    public void setUserId(String UserId) {
-        userId = UserId;
+    public void setMobileNO(String mobileNO) {
+        MobileNO = mobileNO;
     }
 
     public String getPassword() {
-        return password;
+        return Password;
     }
 
-    public void setPassword(String Password) {
-        password = Password;
+    public void setPassword(String password) {
+        Password = password;
+    }
+
+    public Dataholder(String name, String email, String mobileNO, String password) {
+        Name = name;
+        Email = email;
+        MobileNO = mobileNO;
+        Password = password;
+
     }
 }
 
